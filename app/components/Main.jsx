@@ -1,18 +1,21 @@
 var React = require('react');
 var TimerNavigation = require('TimerNavigation');
+var {Grid, Row, Col} = require('react-bootstrap');
 
 var Main = (props) => {
     return (
         <div>
             <TimerNavigation/>
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-md-12">
 
+            <Grid>
+                <Row className="show-grid">
+                    <Col md={3} xsHidden></Col>
+                    <Col md={6}>
                         {props.children}
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                    <Col md={3} xsHidden></Col>
+                </Row>
+            </Grid>
 
         </div>
     );

@@ -47,7 +47,7 @@
   color: $highlight;
   background-color: $nav-link-background;
 }
-.navbar-default .navbar-nav .active {
+.active {
   background-color: $nav-link-background !important;
   color: $highlight !important;
 }
@@ -56,4 +56,8 @@
 }
 .navbar-right {
   margin-right: 0px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: $green;
+  background-color: $nav-link-background;
 }
